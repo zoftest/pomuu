@@ -1,0 +1,13 @@
+{
+  "name": "pomuu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Two-service application for the Zof Graph walkthrough",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start:api": "node services/api/server.mjs",
+    "start:web": "node services/web/server.mjs",
+    "test": "node --test --test-reporter=spec services/api/*.test.mjs services/web/*.test.mjs test/*.test.mjs"
+  }
+}

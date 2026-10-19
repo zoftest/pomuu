@@ -1,0 +1,9 @@
+version: 1
+services:
+  web:
+    tier: 1
+    tags: [demo]
+    calls: [api]
+  api:
+    tier: 2
+    tags: [demo]
